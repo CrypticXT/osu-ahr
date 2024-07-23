@@ -13,6 +13,9 @@ RUN npm install
 # Copy the source code
 COPY src/ src/
 
+# Copy the config directory
+COPY config/ config/
+
 # Build the TypeScript code
 RUN npm run build
 
