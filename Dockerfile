@@ -35,4 +35,4 @@ COPY --from=builder /opt/osuahr/config /opt/osuahr/config
 EXPOSE 3115
 
 # Set the command to run your CLI tool
-ENTRYPOINT ["node", "dist/index.js"]
+CMD ["npm", "run", "start"]
